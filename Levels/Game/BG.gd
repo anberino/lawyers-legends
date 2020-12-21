@@ -6,5 +6,5 @@ func _ready():
 
 
 
-func _process(delta):
+func _process(_delta):
 	self.rotate(0.002)
