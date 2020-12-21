@@ -35,6 +35,7 @@ func _input(event):
 		
 func kill():
 	if alive:
+		$Death_sound.play()
 		$Tween.interpolate_property(sprite, "modulate", Color(1, 1, 1, 1), 
 		Color(0, 0, 0, 0), 1, Tween.TRANS_QUAD, Tween.EASE_IN_OUT)
 		$Tween.start()

@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Entities/Lawyer/KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://Assets/SFX/jump_02.wav" type="AudioStream" id=2]
 [ext_resource path="res://Assets/sprites.png" type="Texture" id=3]
 [ext_resource path="res://Entities/Lawyer/Lawyer.gd" type="Script" id=4]
+[ext_resource path="res://Assets/SFX/magic1.wav" type="AudioStream" id=5]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -54,4 +55,7 @@ playing = true
 shape = SubResource( 5 )
 
 [node name="Tween" type="Tween" parent="KinematicBody2D"]
+
+[node name="Death_sound" type="AudioStreamPlayer2D" parent="KinematicBody2D"]
+stream = ExtResource( 5 )
 [connection signal="tween_all_completed" from="KinematicBody2D/Tween" to="." method="_on_Tween_tween_all_completed"]
