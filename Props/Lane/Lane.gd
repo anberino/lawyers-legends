@@ -42,7 +42,7 @@ func make_tiles():
 		2:
 			if difficulty == 1: slice = [0, 1, 0, 1, 0, 1, 1, 0, 0, 1]
 			if difficulty == 2: slice = [0, 1, 0, 1, 0, 0, 1, 0, 0, 1]
-			if difficulty == 3: slice = [0, 0, 1, 0, 0, 0, 0, 1, 0, 0]
+			if difficulty == 3: slice = [0, 0, 0, 1, 0, 0, 0, 1, 0, 0]
 		3:
 			if difficulty == 1: slice = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0]
 			if difficulty == 2: slice = [0, 0, 1, 0, 1, 0, 0, 1, 0, 0]
@@ -50,7 +50,7 @@ func make_tiles():
 		4:
 			if difficulty == 1: slice = [0, 1, 0, 0, 0, 1, 0, 1, 0, 1]
 			if difficulty == 2: slice = [0, 1, 0, 0, 0, 0, 1, 0, 1, 0]
-			if difficulty == 3: slice = [0, 1, 0, 1, 0, 0, 0, 0, 0, 0]
+			if difficulty == 3: slice = [0, 0, 0, 1, 0, 0, 0, 0, 1, 0]
 		5:
 			if difficulty == 1: slice = [1, 0, 0, 1, 1, 1, 0, 0, 1, 0]
 			if difficulty == 2: slice = [1, 0, 0, 0, 1, 1, 0, 0, 1, 0]
@@ -62,11 +62,11 @@ func make_tiles():
 		7:
 			if difficulty == 1: slice = [1, 0, 1, 0, 1, 0, 1, 1, 0, 0]
 			if difficulty == 2: slice = [1, 0, 1, 0, 1, 0, 0, 0, 0, 0]
-			if difficulty == 3: slice = [1, 0, 0, 0, 0, 0, 0, 1, 0, 1]
+			if difficulty == 3: slice = [1, 0, 0, 0, 0, 1, 0, 0, 0, 1]
 		8:
 			if difficulty == 1: slice = [0, 1, 1, 1, 0, 1, 1, 1, 0, 1]
 			if difficulty == 2: slice = [0, 1, 1, 0, 0, 1, 1, 0, 0, 1]
-			if difficulty == 3: slice = [0, 0, 0, 0, 0, 1, 0, 1, 0, 1]
+			if difficulty == 3: slice = [0, 0, 0, 0, 0, 1, 0, 0, 0, 1]
 		9:
 			if difficulty == 1: slice = [1, 1, 0, 1, 0, 0, 0, 1, 1, 0]
 			if difficulty == 2: slice = [1, 1, 0, 0, 0, 1, 0, 0, 1, 0]
@@ -74,7 +74,7 @@ func make_tiles():
 		10:
 			if difficulty == 1: slice = [0, 0, 1, 1, 0, 1, 1, 1, 0, 0]
 			if difficulty == 2: slice = [0, 1, 0, 1, 0, 0, 1, 1, 1, 0]
-			if difficulty == 3: slice = [0, 0, 0, 0, 1, 0, 1, 0, 1, 0]
+			if difficulty == 3: slice = [0, 0, 0, 0, 1, 0, 0, 0, 1, 0]
 		_:
 			slice = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 	return slice
