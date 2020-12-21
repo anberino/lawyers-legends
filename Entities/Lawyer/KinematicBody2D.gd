@@ -27,6 +27,7 @@ func _physics_process(delta):
 
 func _input(event):
 	if event.is_action_pressed("jump_" + str(id)) and grounded:
+		$Jump_sound.play()
 		speed = -jump
 		sprite.animation = "jump"
 	if event.is_action_released("jump_" + str(id)):
